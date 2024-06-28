@@ -1,0 +1,31 @@
+class Warehouse:
+    def __init__(self):
+        self.goods = {}
+
+    def add_item(self, item, quantity):
+        if item in self.goods:
+            self.goods[item] += quantity
+        else:
+            self.goods[item] = quantity
+
+    def remove_item(self, item, quantity):
+        if item in self.goods and self.goods[item] >= quantity:
+            self.goods[item] -= quantity
+            if self.goods[item] == 0:
+                del self.goods[item]
+        else:
+            print("Not enough quantity or item does not exist.")
+
+    def get_quantity(self, item):
+        return self.goods.get(item, 0)
+
+    def total_inventory(self):
+        return sum(self.goods.values())
+
+# Example usage
+warehouse = Warehouse()
+warehouse.add_item('Apples', 50)
+warehouse.add_item('Oranges', 75)
+warehouse.remove_item('Apples', 10)
+print(f"Apples in stock: {warehouse.get_quantity('Apples')}")
+print(f"Total inventory: {warehouse.total_inventory()}")
