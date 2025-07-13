@@ -23,7 +23,7 @@ class Warehouse:
         return sum(self.goods.values())
 
 # Example usage
-warehouse = Warehouse()
+warehouse = Warehouse(//)
 warehouse.add_item('Apples', 50)
 warehouse.add_item('Oranges', 75)
 warehouse.remove_item('Apples', 10)
