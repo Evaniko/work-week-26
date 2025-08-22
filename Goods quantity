@@ -1,6 +1,6 @@
 class Warehouse:
     def __init__(self):
-        self.goods = {//}
+        self.goods = {}
 
     def add_item(self, item, quantity):
         if item in self.goods:
