@@ -16,7 +16,7 @@ class Warehouse:
         else:
             print("Not enough quantity or item does not exist.")
 
-    def get_quantity(self, item):))
+    def get_quantity(self, item):
         return self.goods.get(item, 0)
 
     def total_inventory(self):
