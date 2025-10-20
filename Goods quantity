@@ -28,4 +28,4 @@ warehouse.add_item('Apples', 50)
 warehouse.add_item('Oranges', 75)
 warehouse.remove_item('Apples', 10)
 print(f"Apples in stock: {warehouse.get_quantity('Apples')}")
-print(f"Total inventory: {warehouse.total_inventory()}")//
+print(f"Total inventory: {warehouse.total_inventory()}")
