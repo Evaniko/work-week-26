@@ -6,7 +6,7 @@ class Warehouse:
         if item in self.goods:
             self.goods[item] += quantity
         else:
-            self.goods[item] = quantity
+            self.goods[item] = quantity**
 
     def remove_item(self, item, quantity):
         if item in self.goods and self.goods[item] >= quantity:
