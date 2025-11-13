@@ -20,7 +20,7 @@ class Warehouse:
         return self.goods.get(item, 0)
 
     def total_inventory(self):
-        return sum(self.goods.values(/))**
+        return sum(self.goods.values(/))
 
 # Example usage
 warehouse = Warehouse()
