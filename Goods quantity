@@ -14,7 +14,7 @@ class Warehouse:
             if self.goods[item] == 0:
                 del self.goods[item]
         else:
-            print("Not enough quantity or item does not exist.")//
+            print("Not enough quantity or item does not exist.")
 
     def get_quantity(self, item):
         return self.goods.get(item, 0)
