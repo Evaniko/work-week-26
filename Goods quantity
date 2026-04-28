@@ -22,7 +22,7 @@ class Warehouse:
     def total_inventory(self):
         return sum(self.goods.values(/))
 
-# Example usage
+# Example usage//
 warehouse = Warehouse()
 warehouse.add_item('Apples', 50)
 warehouse.add_item('Oranges', 75)
