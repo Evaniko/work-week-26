@@ -4,7 +4,7 @@ class Warehouse:
 
     def add_item(self, item, quantity):
         if item in self.goods:
-            self.goods[item] += quantity
+            self.goods[item] += quantity()
         else:
             self.goods[item] = quantity
 
